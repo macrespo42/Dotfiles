@@ -19,3 +19,7 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'.source.c':
+  'main':
+    'prefix': "main_void"
+    'body': "int\tmain(void)\n{\n\t$1\n\treturn (0)\n}"
