@@ -25,5 +25,13 @@
     'body': 'int\t\tmain(void)\n{\n\t$1\n\treturn (0);\n}'
 
   'main2':
-    'prefix': "main_ARG"
-    'body': "int\t\tmain(int ac, char **av)\n{\n\t$1\n\treturn (0);\n}"
+    'prefix': 'main_ARG'
+    'body': 'int\t\tmain(int ac, char **av)\n{\n\t$1\n\treturn (0);\n}'
+
+  'if':
+    'prefix': 'if'
+    'body': 'if (${1:})\n{\n\t${2:}\n}'
+
+  'while':
+    'prefix': 'while'
+    'body': 'while (${1:})\n{\n\t${2:}\n}'
