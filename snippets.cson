@@ -20,18 +20,34 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 '.source.c':
-  'main':
-    'prefix': 'main_void'
-    'body': 'int\t\tmain(void)\n{\n\t$1\n\treturn (0);\n}'
+	'main':
+		'prefix': 'main_void'
+		'body': 'int\t\tmain(void)\n{\n\t$1\n\treturn (0);\n}'
 
-  'main2':
-    'prefix': 'main_ARG'
-    'body': 'int\t\tmain(int ac, char **av)\n{\n\t$1\n\treturn (0);\n}'
+	'main2':
+		'prefix': 'main_ARG'
+		'body': 'int\t\tmain(int ac, char **av)\n{\n\t$1\n\treturn (0);\n}'
 
-  'if':
-    'prefix': 'if'
-    'body': 'if (${1:})\n{\n\t${2:}\n}'
+	'if':
+		'prefix': 'if'
+		'body': 'if (${1:})\n{\n\t${2:}\n}'
 
-  'while':
-    'prefix': 'while'
-    'body': 'while (${1:})\n{\n\t${2:}\n}'
+	'while':
+		'prefix': 'while'
+		'body': 'while (${1:})\n{\n\t${2:}\n}'
+
+	'ft_strlen':
+		'prefix': 'ft_strlen'
+		'body': 'size_t\tft_strlen($1)'
+
+	'ft_strdup':
+		'prefix': 'ft_strdup'
+		'body': 'char\t*ft_strdup(${1:const char *s})'
+
+	'ft_strcpy':
+		'prefix': 'ft_strcpy'
+		'body': 'char\t*ft_strcpy(${1:char *dest}, ${2:const char *src});'
+
+	'ft_strncpy':
+		'prefix': 'ft_strncpy'
+		'body': 'char\t*ft_strncpy(${1:char *dest}, ${2:const char *src}, ${3:size_t n});'
