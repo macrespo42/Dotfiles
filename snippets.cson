@@ -20,6 +20,11 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 '.source.c':
+
+	'void':
+		'prefix': 'void'
+		'body': 'void\t'
+
 	'main':
 		'prefix': 'main_void'
 		'body': 'int\t\tmain(void)\n{\n\t$1\n\treturn (0);\n}'
@@ -59,3 +64,31 @@
 	'ft_strncat':
 		'prefix': 'ft_strncat'
 		'body': 'char\t*ft_strncat(${1:char *dest}, ${2:const char *src}, ${3:size_t n)}'
+
+	'ft_isalpha':
+		'prefix': 'ft_isalpha'
+		'body': 'int\t\tft_isalpha(${1:int c})'
+
+	'ft_isdigit':
+		'prefix': 'ft_isdigit'
+		'body': 'int\t\tft_isdigit(${1:int c})'
+
+	'ft_isalnum':
+		'prefix': 'ft_isalnum'
+		'body': 'int\t\tft_isalnum(${1:int c})'
+
+	'ft_isascii':
+		'prefix': 'ft_isascii'
+		'body': 'int\t\tft_isascii(${1:int c)}'
+
+	'ft_isprint':
+		'prefix': 'ft_isprint'
+		'body': 'int\t\tft_isprint(${1:int c})'
+
+	'ft_toupper':
+		'prefix': 'ft_toupper'
+		'body': 'int\t\tft_toupper(${1:int c})'
+
+	'ft_tolower':
+		'prefix': 'ft_tolower'
+		'body': 'int\t\tft_tolower(${1:int c})'
