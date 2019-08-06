@@ -51,3 +51,11 @@
 	'ft_strncpy':
 		'prefix': 'ft_strncpy'
 		'body': 'char\t*ft_strncpy(${1:char *dest}, ${2:const char *src}, ${3:size_t n});'
+
+	'ft_strcat':
+		'prefix': 'ft_strcat'
+		'body': 'char\t*ft_strcat(${1:char *dest}, ${2:const char *src})'
+
+	'ft_strncat':
+		'prefix': 'ft_strncat'
+		'body': 'char\t*ft_strncat(${1:char *dest}, ${2:const char *src}, ${3:size_t n)}'
