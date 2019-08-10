@@ -25,6 +25,10 @@
 		'prefix': 'void'
 		'body': 'void\t'
 
+	'int':
+		'prefix': 'int'
+		'body': 'int\t\t'
+
 	'main':
 		'prefix': 'main_void'
 		'body': 'int\t\tmain(void)\n{\n\t$1\n\treturn (0);\n}'
@@ -43,52 +47,56 @@
 
 	'ft_strlen':
 		'prefix': 'ft_strlen'
-		'body': 'size_t\tft_strlen($1)'
+		'body': 'ft_strlen($1)'
 
 	'ft_strdup':
 		'prefix': 'ft_strdup'
-		'body': 'char\t*ft_strdup(${1:const char *s})'
+		'body': 'ft_strdup(${1:const char *s})'
 
 	'ft_strcpy':
 		'prefix': 'ft_strcpy'
-		'body': 'char\t*ft_strcpy(${1:char *dest}, ${2:const char *src});'
+		'body': 'ft_strcpy(${1:char *dest}, ${2:const char *src});'
 
 	'ft_strncpy':
 		'prefix': 'ft_strncpy'
-		'body': 'char\t*ft_strncpy(${1:char *dest}, ${2:const char *src}, ${3:size_t n});'
+		'body': 'ft_strncpy(${1:char *dest}, ${2:const char *src}, ${3:size_t n});'
 
 	'ft_strcat':
 		'prefix': 'ft_strcat'
-		'body': 'char\t*ft_strcat(${1:char *dest}, ${2:const char *src})'
+		'body': 'ft_strcat(${1:char *dest}, ${2:const char *src})'
 
 	'ft_strncat':
 		'prefix': 'ft_strncat'
-		'body': 'char\t*ft_strncat(${1:char *dest}, ${2:const char *src}, ${3:size_t n)}'
+		'body': 'ft_strncat(${1:char *dest}, ${2:const char *src}, ${3:size_t n)}'
 
 	'ft_isalpha':
 		'prefix': 'ft_isalpha'
-		'body': 'int\t\tft_isalpha(${1:int c})'
+		'body': 'ft_isalpha(${1:int c})'
 
 	'ft_isdigit':
 		'prefix': 'ft_isdigit'
-		'body': 'int\t\tft_isdigit(${1:int c})'
+		'body': 'ft_isdigit(${1:int c})'
 
 	'ft_isalnum':
 		'prefix': 'ft_isalnum'
-		'body': 'int\t\tft_isalnum(${1:int c})'
+		'body': 'ft_isalnum(${1:int c})'
 
 	'ft_isascii':
 		'prefix': 'ft_isascii'
-		'body': 'int\t\tft_isascii(${1:int c)}'
+		'body': 'ft_isascii(${1:int c)}'
 
 	'ft_isprint':
 		'prefix': 'ft_isprint'
-		'body': 'int\t\tft_isprint(${1:int c})'
+		'body': 'ft_isprint(${1:int c})'
 
 	'ft_toupper':
 		'prefix': 'ft_toupper'
-		'body': 'int\t\tft_toupper(${1:int c})'
+		'body': 'ft_toupper(${1:int c})'
 
 	'ft_tolower':
 		'prefix': 'ft_tolower'
-		'body': 'int\t\tft_tolower(${1:int c})'
+		'body': 'ft_tolower(${1:int c})'
+
+	'ft_atoi':
+		'prefix': 'ft_atoi'
+		'body': 'ft_atoi(${1:const char *nptr})'
