@@ -100,3 +100,27 @@
 	'ft_atoi':
 		'prefix': 'ft_atoi'
 		'body': 'ft_atoi(${1:const char *nptr})'
+
+	'ft_strrchr':
+		'prefix': 'ft_strrchr'
+		'body': 'ft_strrchr(${1:const char *s}, ${2:int c})'
+
+	'ft_strchr':
+		'prefix': 'ft_strchr'
+		'body': 'ft_strchr(${1:const char *s}, ${2:int c})'
+
+	'ft_strstr':
+		'prefix': 'ft_strstr'
+		'body': 'ft_strstr(${1:const char *haystack}, ${2:const char *needle})'
+
+	'ft_strnstr':
+		'prefix': 'ft_strnstr'
+		'body': 'ft_strnstr(${1:const char *haystack}, ${2:const char *needle}, ${3:size_t len})'
+
+	'ft_strcmp':
+		'prefix': 'ft_strcmp'
+		'body': 'ft_strcmp(${1:const char *s1}, ${2:const char *s2)}'
+
+	'ft_strncmp':
+		'prefix': 'ft_strncmp'
+		'body': 'ft_strncmp(${1:const char *s1}, ${2:const char *s2}, ${3:size_t n})'
