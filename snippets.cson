@@ -47,7 +47,7 @@
 
 	'ft_strlen':
 		'prefix': 'ft_strlen'
-		'body': 'ft_strlen($1)'
+		'body': 'ft_strlen(${1:const char *s})'
 
 	'ft_strdup':
 		'prefix': 'ft_strdup'
@@ -124,3 +124,27 @@
 	'ft_strncmp':
 		'prefix': 'ft_strncmp'
 		'body': 'ft_strncmp(${1:const char *s1}, ${2:const char *s2}, ${3:size_t n})'
+
+	'ft_memcmp':
+		'prefix': 'ft_memcmp'
+		'body': 'ft_memcmp(${1:const void *s1}, ${2:const void *s2}, ${3:size_t n)}'
+
+	'ft_memset':
+		'prefix': 'ft_memset'
+		'body': 'ft_memset(${1:void *b}, ${2:int c}, ${3:size_t len})'
+
+	'ft_bzero':
+		'prefix': 'ft_bzero'
+		'body': 'ft_bzero(${1:void *s}, ${2:size_t n)}'
+
+	'ft_memcpy':
+		'prefix': 'ft_memcpy'
+		'body': 'ft_memcpy(${1:void *dest}, ${2:const void *src}, ${3:size_t n})'
+
+	'ft_memmove':
+		'prefix': 'ft_memmove'
+		'body': 'ft_memmove(${1:void *dest}, ${2:const void *src}, ${3:size_t n})'
+
+	'ft_memchr':
+		'prefix': 'ft_memchr'
+		'body': 'ft_memchr(${1:const void *s}, ${2:int c}, ${3:size_t n})'
