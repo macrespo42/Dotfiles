@@ -184,3 +184,31 @@
 	'ft_putnbr_fd':
 		'prefix': 'ft_putnbr_fd'
 		'body': 'ft_putnbr_fd(${1:int n}, ${2:int fd})'
+
+	'ft_strnew':
+		'prefix': 'ft_strnew'
+		'body': 'ft_strnew(${1:size_t size})'
+
+	'ft_strjoin':
+		'prefix': 'ft_strnew'
+		'body': 'ft_strjoin(${1:char const *s1}, ${2:char const *s2})'
+
+	'ft_strtrim':
+		'prefix': 'ft_strtrim'
+		'body': 'ft_strtrim(${1:char const *s})'
+
+	'ft_strsub':
+		'prefix': 'ft_strsub'
+		'body': 'ft_strsub(${1:char const *s}, ${2:unsigned int start}, ${3:size_t len})'
+
+	'ft_strsplit':
+		'prefix': 'ft_strsplit'
+		'body': 'ft_strsplit(${1:char const *s}, ${2:char c})'
+
+	'ft_strclr':
+		'prefix': 'ft_strclr'
+		'body': 'ft_strclr(${1:char *s})'
+
+	'ft_itoa':
+		'prefix': 'ft_itoa'
+		'body': 'ft_itoa(${1:int n})'
