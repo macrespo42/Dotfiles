@@ -29,6 +29,10 @@
 		'prefix': 'int'
 		'body': 'int\t\t'
 
+	'char':
+		'prefix': 'char'
+		'body': 'char\t\t'
+
 	'main':
 		'prefix': 'main_void'
 		'body': 'int\t\tmain(void)\n{\n\t$1\n\treturn (0);\n}'
