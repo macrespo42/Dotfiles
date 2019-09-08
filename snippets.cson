@@ -148,3 +148,35 @@
 	'ft_memchr':
 		'prefix': 'ft_memchr'
 		'body': 'ft_memchr(${1:const void *s}, ${2:int c}, ${3:size_t n})'
+
+	'ft_putchar':
+		'prefix': 'ft_putchar'
+		'body': 'ft_putchar(${1:char c})'
+
+	'ft_putstr':
+		'prefix': 'ft_putstr'
+		'body': 'ft_putstr(${1:char const *str})'
+
+	'ft_putendl':
+		'prefix': 'ft_putendl'
+		'body': 'ft_putendl(${1:char const *str})'
+
+	'ft_putnbr':
+		'prefix': 'ft_putnbr'
+		'body': 'ft_putnbr(${1:int n})'
+
+	'ft_putchar_fd':
+		'prefix': 'ft_putchar_fd'
+		'body': 'ft_putchar_fd(${1:char c}, ${2:int fd})'
+
+	'ft_putstr_fd':
+		'prefix': 'ft_putstr_fd'
+		'body': 'ft_putstr_fd(${1:char const *s}, ${2:int fd})'
+
+	'ft_putendl_fd':
+		'prefix': 'ft_putendl_fd'
+		'body': 'ft_putendl_fd(${1:char const *s}, ${2:int fd})'
+
+	'ft_putnbr_fd':
+		'prefix': 'ft_putnbr_fd'
+		'body': 'ft_putnbr_fd(${1:int n}, ${2:int fd})'
