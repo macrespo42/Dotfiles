@@ -21,6 +21,7 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 '.source.c':
 
+# BASIC C
 	'void':
 		'prefix': 'void'
 		'body': 'void\t'
@@ -31,7 +32,7 @@
 
 	'char':
 		'prefix': 'char'
-		'body': 'char\t\t'
+		'body': 'char\t'
 
 	'main':
 		'prefix': 'main_void'
@@ -49,6 +50,7 @@
 		'prefix': 'while'
 		'body': 'while (${1:})\n{\n\t${2:}\n}'
 
+# LIBFT
 	'ft_strlen':
 		'prefix': 'ft_strlen'
 		'body': 'ft_strlen(${1:const char *s})'
@@ -56,18 +58,6 @@
 	'ft_strdup':
 		'prefix': 'ft_strdup'
 		'body': 'ft_strdup(${1:const char *s})'
-
-	'ft_strcpy':
-		'prefix': 'ft_strcpy'
-		'body': 'ft_strcpy(${1:char *dest}, ${2:const char *src});'
-
-	'ft_strncpy':
-		'prefix': 'ft_strncpy'
-		'body': 'ft_strncpy(${1:char *dest}, ${2:const char *src}, ${3:size_t n});'
-
-	'ft_strcat':
-		'prefix': 'ft_strcat'
-		'body': 'ft_strcat(${1:char *dest}, ${2:const char *src})'
 
 	'ft_strncat':
 		'prefix': 'ft_strncat'
@@ -113,17 +103,9 @@
 		'prefix': 'ft_strchr'
 		'body': 'ft_strchr(${1:const char *s}, ${2:int c})'
 
-	'ft_strstr':
-		'prefix': 'ft_strstr'
-		'body': 'ft_strstr(${1:const char *haystack}, ${2:const char *needle})'
-
 	'ft_strnstr':
 		'prefix': 'ft_strnstr'
 		'body': 'ft_strnstr(${1:const char *haystack}, ${2:const char *needle}, ${3:size_t len})'
-
-	'ft_strcmp':
-		'prefix': 'ft_strcmp'
-		'body': 'ft_strcmp(${1:const char *s1}, ${2:const char *s2)}'
 
 	'ft_strncmp':
 		'prefix': 'ft_strncmp'
@@ -153,22 +135,6 @@
 		'prefix': 'ft_memchr'
 		'body': 'ft_memchr(${1:const void *s}, ${2:int c}, ${3:size_t n})'
 
-	'ft_putchar':
-		'prefix': 'ft_putchar'
-		'body': 'ft_putchar(${1:char c})'
-
-	'ft_putstr':
-		'prefix': 'ft_putstr'
-		'body': 'ft_putstr(${1:char const *str})'
-
-	'ft_putendl':
-		'prefix': 'ft_putendl'
-		'body': 'ft_putendl(${1:char const *str})'
-
-	'ft_putnbr':
-		'prefix': 'ft_putnbr'
-		'body': 'ft_putnbr(${1:int n})'
-
 	'ft_putchar_fd':
 		'prefix': 'ft_putchar_fd'
 		'body': 'ft_putchar_fd(${1:char c}, ${2:int fd})'
@@ -185,9 +151,9 @@
 		'prefix': 'ft_putnbr_fd'
 		'body': 'ft_putnbr_fd(${1:int n}, ${2:int fd})'
 
-	'ft_strnew':
-		'prefix': 'ft_strnew'
-		'body': 'ft_strnew(${1:size_t size})'
+	'ft_calloc':
+		'prefix': 'ft_calloc'
+		'body': 'ft_calloc(${1:size_t count}, ${2:size_t size})'
 
 	'ft_strjoin':
 		'prefix': 'ft_strnew'
@@ -195,20 +161,96 @@
 
 	'ft_strtrim':
 		'prefix': 'ft_strtrim'
-		'body': 'ft_strtrim(${1:char const *s})'
+		'body': 'ft_strtrim(${1:char const *s}, ${2:char const *set})'
 
-	'ft_strsub':
-		'prefix': 'ft_strsub'
-		'body': 'ft_strsub(${1:char const *s}, ${2:unsigned int start}, ${3:size_t len})'
+	'ft_substr':
+		'prefix': 'ft_substr'
+		'body': 'ft_substr(${1:char const *s}, ${2:unsigned int start}, ${3:size_t len})'
 
-	'ft_strsplit':
-		'prefix': 'ft_strsplit'
-		'body': 'ft_strsplit(${1:char const *s}, ${2:char c})'
-
-	'ft_strclr':
-		'prefix': 'ft_strclr'
-		'body': 'ft_strclr(${1:char *s})'
+	'ft_split':
+		'prefix': 'ft_split'
+		'body': 'ft_split(${1:char const *s}, ${2:char c})'
 
 	'ft_itoa':
 		'prefix': 'ft_itoa'
 		'body': 'ft_itoa(${1:int n})'
+
+	'ft_strmapi':
+		'prefix': 'ft_strmapi'
+		'body': 'ft_strmapi(${1:char const *s}, ${2:char (*f)(unsigned int, char)})'
+
+	'get_next_line':
+		'prefix': 'gnl'
+		'body': 'get_next_line(${1:int fd}, ${2:char **line})'
+
+	'ft_printf':
+		'prefix': 'ft_printf'
+		'body': 'ft_printf(${1:const char *s}, ${2:...})'
+
+#MLX SNIPPETS
+	'mlx_init':
+		'prefix': 'mlx_init'
+		'body'  : 'mlx_init(${1:})${6:}'
+	'mlx_new_window':
+		'prefix': 'mlx_new_window'
+		'body'  : 'mlx_new_window(${1:void *mlx_ptr}, ${2:int size_x}, ${3:int size_y}, ${4:char *title})${6:}'
+	'mlx_clear_window':
+		'prefix': 'mlx_clear_window'
+		'body'  : 'mlx_clear_window(${1:void *mlx_ptr}, ${2:void *win_ptr})${6:}'
+	'mlx_pixel_put':
+		'prefix': 'mlx_pixel_put'
+		'body'  : 'mlx_pixel_put(${1:void *mlx_ptr}, ${2:void *win_ptr}, ${3:int x}, ${4:int y}, ${5:int color})${6:}'
+	'mlx_new_image':
+		'prefix': 'mlx_new_image'
+		'body'  : 'mlx_new_image(${1:void *mlx_ptr}, ${2:int width}, ${3:int height})${6:}'
+	'mlx_get_data_addr':
+		'prefix': 'mlx_get_data_addr'
+		'body'  : 'mlx_get_data_addr(${1:void *img_ptr}, ${2:int *bits_per_pixel}, ${3:int *size_line}, ${4:int *endian})${6:}'
+	'mlx_put_image_to_window':
+		'prefix': 'mlx_put_image_to_window'
+		'body'  : 'mlx_put_image_to_window(${1:void *mlx_ptr}, ${2:void *win_ptr}, ${3:void *img_ptr}, ${4:int x}, ${5:int y})${6:}'
+	'mlx_get_color_value':
+		'prefix': 'mlx_get_color_value'
+		'body'  : 'mlx_get_color_value(${1:void *mlx_ptr}, ${2:int color})${6:}'
+	'mlx_loop':
+		'prefix': 'mlx_loop'
+		'body'  : 'mlx_loop(${1:void *mlx_ptr})${6:}'
+	'mlx_string_put':
+		'prefix': 'mlx_string_put'
+		'body'  : 'mlx_string_put(${1:void *mlx_ptr}, ${2:void *win_ptr}, ${3:int x}, ${4:int y}, ${5:int color}, ${6:char *string})${6:}'
+	'mlx_xpm_to_image':
+		'prefix': 'mlx_xpm_to_image'
+		'body'  : 'mlx_xpm_to_image(${1:void *mlx_ptr}, ${2:char **xpm_data}, ${3:int *width}, ${4:int *height})${6:}'
+	'mlx_xpm_file_to_image':
+		'prefix': 'mlx_xpm_file_to_image'
+		'body'  : 'mlx_xpm_file_to_image(${1:void *mlx_ptr}, ${2:char *filename}, ${3:int *width}, ${4:int *height})${6:}'
+	'mlx_destroy_window':
+		'prefix': 'mlx_destroy_window'
+		'body'  : 'mlx_destroy_window(${1:void *mlx_ptr}, ${2:void *win_ptr})${6:}'
+	'mlx_destroy_image':
+		'prefix': 'mlx_destroy_image'
+		'body'  : 'mlx_destroy_image(${1:void *mlx_ptr}, ${2:void *img_ptr})${6:}'
+	'mlx_do_key_autorepeatoff':
+		'prefix': 'mlx_do_key_autorepeatoff'
+		'body'  : 'mlx_do_key_autorepeatoff(${1:void *mlx_ptr})${6:}'
+	'mlx_do_key_autorepeaton':
+		'prefix': 'mlx_do_key_autorepeaton'
+		'body'  : 'mlx_do_key_autorepeaton(${1:void *mlx_ptr})${6:}'
+	'mlx_do_sync':
+		'prefix': 'mlx_do_sync'
+		'body'  : 'mlx_do_sync(${1:void *mlx_ptr})${6:}'
+	'mlx_hook':
+		'prefix': 'mlx_hook'
+		'body'  : 'mlx_hook(${1:void *win_ptr}, ${2:int x_event}, ${3:int x_mask}, ${4:int *funct_ptr}, ${5:void *param})${6:}'
+	'mlx_mouse_hook':
+		'prefix': 'mlx_mouse_hook'
+		'body'  : 'mlx_mouse_hook(${1:void *win_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'
+	'mlx_key_hook':
+		'prefix': 'mlx_key_hook'
+		'body'  : 'mlx_key_hook(${1:void *win_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'
+	'mlx_expose_hook':
+		'prefix': 'mlx_expose_hook'
+		'body'  : 'mlx_expose_hook(${1:void *win_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'
+	'mlx_loop_hook':
+		'prefix': 'mlx_loop_hook'
+		'body'  : 'mlx_loop_hook(${1:void *mlx_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'
