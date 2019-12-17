@@ -1,0 +1,19 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dracula-syntax"
+    ]
+  editor:
+    fontSize: 17
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "hard"
+  "exception-reporting":
+    userId: "b0d5aa82-1795-4d67-9787-19931ef26853"
+  "header-42":
+    login: "macrespo"
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,18 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dracula-syntax"
+    ]
+  editor:
+    showInvisibles: true
+    tabLength: 4
+    tabType: "hard"
+  "exception-reporting":
+    userId: "19756e4e-66bf-4f42-ada2-8fbeaa8b21e4"
+  minimap: {}
+  "platformio-ide-terminal":
+    core: {}
+  welcome:
+    showOnStartup: false

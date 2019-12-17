@@ -1,1 +1,1 @@
-mv .atom ~/.atom
+cp -r .atom ~/.atom
