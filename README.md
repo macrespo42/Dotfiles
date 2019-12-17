@@ -1,7 +1,7 @@
-# My Atom snippets
+# Dotfiles
 
-This is the snippets i use in the atom code editor
+Include atom config like snippets, packages, themes ...
 
-## How to install ?
+## Install
 
-Go to Atom, snippets and copy / past this snippets.cson in your snippets.cson 
+just launch the installer.sh

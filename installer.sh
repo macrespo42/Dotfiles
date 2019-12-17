@@ -1,0 +1,1 @@
+mv .atom ~/.atom
