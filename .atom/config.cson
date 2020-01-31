@@ -17,3 +17,12 @@
     login: "macrespo"
   welcome:
     showOnStartup: false
+".console.python.text":
+  editor:
+    tabType: "soft"
+".python.source":
+  editor:
+    tabType: "soft"
+".python.text.traceback":
+  editor:
+    tabType: "soft"

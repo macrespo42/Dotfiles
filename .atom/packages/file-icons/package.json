@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/file-icons/versions/2.1.36/tarball",
-  "_id": "file-icons@2.1.36",
+  "_from": "https://www.atom.io/api/packages/file-icons/versions/2.1.38/tarball",
+  "_id": "file-icons@2.1.38",
   "_inBundle": false,
-  "_integrity": "sha512-L09kSwT28uqPuHPc01vN+eWNOx95gNVDRu5Uamv7WCvoq7S8GQx9FoqbYoZuMvFkKaggc5vq1GhKFJqz24x/5w==",
+  "_integrity": "sha512-y7sagJbPCHY964CV4lPmN6066mbSKc2TXNagZ/+iuqfRxl+iLBLwxM4o1040YM9t0InAW93mahFnzfRhdt8uCA==",
   "_location": "/file-icons",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/file-icons/versions/2.1.36/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/file-icons/versions/2.1.36/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/file-icons/versions/2.1.36/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/file-icons/versions/2.1.36/tarball"
+    "raw": "https://www.atom.io/api/packages/file-icons/versions/2.1.38/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/file-icons/versions/2.1.38/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/file-icons/versions/2.1.38/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/file-icons/versions/2.1.38/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/file-icons/versions/2.1.36/tarball",
-  "_shasum": "ec98d21008173766e345fe717d4c004f653495c6",
-  "_spec": "https://www.atom.io/api/packages/file-icons/versions/2.1.36/tarball",
-  "_where": "/tmp/apm-install-dir-119919-4737-10yjg04.6kj4",
+  "_resolved": "https://www.atom.io/api/packages/file-icons/versions/2.1.38/tarball",
+  "_shasum": "78a356012ffd1f5a41ef47b8ea43fc7bc40e2062",
+  "_spec": "https://www.atom.io/api/packages/file-icons/versions/2.1.38/tarball",
+  "_where": "/tmp/apm-install-dir-120031-10810-19ekgyn.smhz",
   "atomTestRunner": "atom-mocha",
   "bugs": {
     "url": "https://github.com/file-icons/atom/issues"
@@ -142,5 +142,5 @@
     "lint": "npx eslint . && npx coffeelint -q config.cson",
     "test": "atom -t ./test/"
   },
-  "version": "2.1.36"
+  "version": "2.1.38"
 }

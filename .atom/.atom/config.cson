@@ -6,13 +6,23 @@
       "dracula-syntax"
     ]
   editor:
+    fontSize: 17
+    showIndentGuide: true
     showInvisibles: true
     tabLength: 4
     tabType: "hard"
   "exception-reporting":
-    userId: "19756e4e-66bf-4f42-ada2-8fbeaa8b21e4"
-  minimap: {}
-  "platformio-ide-terminal":
-    core: {}
+    userId: "b0d5aa82-1795-4d67-9787-19931ef26853"
+  "header-42":
+    login: "macrespo"
   welcome:
     showOnStartup: false
+".console.python.text":
+  editor:
+    tabType: "soft"
+".python.source":
+  editor:
+    tabType: "soft"
+".python.text.traceback":
+  editor:
+    tabType: "soft"

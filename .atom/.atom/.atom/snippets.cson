@@ -1,0 +1,256 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'.source.c':
+
+# BASIC C
+	'void':
+		'prefix': 'void'
+		'body': 'void\t'
+
+	'int':
+		'prefix': 'int'
+		'body': 'int\t\t'
+
+	'char':
+		'prefix': 'char'
+		'body': 'char\t'
+
+	'main':
+		'prefix': 'main_void'
+		'body': 'int\t\tmain(void)\n{\n\t$1\n\treturn (0);\n}'
+
+	'main2':
+		'prefix': 'main_ARG'
+		'body': 'int\t\tmain(int ac, char **av)\n{\n\t$1\n\treturn (0);\n}'
+
+	'if':
+		'prefix': 'if'
+		'body': 'if (${1:})\n{\n\t${2:}\n}'
+
+	'while':
+		'prefix': 'while'
+		'body': 'while (${1:})\n{\n\t${2:}\n}'
+
+# LIBFT
+	'ft_strlen':
+		'prefix': 'ft_strlen'
+		'body': 'ft_strlen(${1:const char *s})'
+
+	'ft_strdup':
+		'prefix': 'ft_strdup'
+		'body': 'ft_strdup(${1:const char *s})'
+
+	'ft_strncat':
+		'prefix': 'ft_strncat'
+		'body': 'ft_strncat(${1:char *dest}, ${2:const char *src}, ${3:size_t n)}'
+
+	'ft_isalpha':
+		'prefix': 'ft_isalpha'
+		'body': 'ft_isalpha(${1:int c})'
+
+	'ft_isdigit':
+		'prefix': 'ft_isdigit'
+		'body': 'ft_isdigit(${1:int c})'
+
+	'ft_isalnum':
+		'prefix': 'ft_isalnum'
+		'body': 'ft_isalnum(${1:int c})'
+
+	'ft_isascii':
+		'prefix': 'ft_isascii'
+		'body': 'ft_isascii(${1:int c)}'
+
+	'ft_isprint':
+		'prefix': 'ft_isprint'
+		'body': 'ft_isprint(${1:int c})'
+
+	'ft_toupper':
+		'prefix': 'ft_toupper'
+		'body': 'ft_toupper(${1:int c})'
+
+	'ft_tolower':
+		'prefix': 'ft_tolower'
+		'body': 'ft_tolower(${1:int c})'
+
+	'ft_atoi':
+		'prefix': 'ft_atoi'
+		'body': 'ft_atoi(${1:const char *nptr})'
+
+	'ft_strrchr':
+		'prefix': 'ft_strrchr'
+		'body': 'ft_strrchr(${1:const char *s}, ${2:int c})'
+
+	'ft_strchr':
+		'prefix': 'ft_strchr'
+		'body': 'ft_strchr(${1:const char *s}, ${2:int c})'
+
+	'ft_strnstr':
+		'prefix': 'ft_strnstr'
+		'body': 'ft_strnstr(${1:const char *haystack}, ${2:const char *needle}, ${3:size_t len})'
+
+	'ft_strncmp':
+		'prefix': 'ft_strncmp'
+		'body': 'ft_strncmp(${1:const char *s1}, ${2:const char *s2}, ${3:size_t n})'
+
+	'ft_memcmp':
+		'prefix': 'ft_memcmp'
+		'body': 'ft_memcmp(${1:const void *s1}, ${2:const void *s2}, ${3:size_t n)}'
+
+	'ft_memset':
+		'prefix': 'ft_memset'
+		'body': 'ft_memset(${1:void *b}, ${2:int c}, ${3:size_t len})'
+
+	'ft_bzero':
+		'prefix': 'ft_bzero'
+		'body': 'ft_bzero(${1:void *s}, ${2:size_t n)}'
+
+	'ft_memcpy':
+		'prefix': 'ft_memcpy'
+		'body': 'ft_memcpy(${1:void *dest}, ${2:const void *src}, ${3:size_t n})'
+
+	'ft_memmove':
+		'prefix': 'ft_memmove'
+		'body': 'ft_memmove(${1:void *dest}, ${2:const void *src}, ${3:size_t n})'
+
+	'ft_memchr':
+		'prefix': 'ft_memchr'
+		'body': 'ft_memchr(${1:const void *s}, ${2:int c}, ${3:size_t n})'
+
+	'ft_putchar_fd':
+		'prefix': 'ft_putchar_fd'
+		'body': 'ft_putchar_fd(${1:char c}, ${2:int fd})'
+
+	'ft_putstr_fd':
+		'prefix': 'ft_putstr_fd'
+		'body': 'ft_putstr_fd(${1:char const *s}, ${2:int fd})'
+
+	'ft_putendl_fd':
+		'prefix': 'ft_putendl_fd'
+		'body': 'ft_putendl_fd(${1:char const *s}, ${2:int fd})'
+
+	'ft_putnbr_fd':
+		'prefix': 'ft_putnbr_fd'
+		'body': 'ft_putnbr_fd(${1:int n}, ${2:int fd})'
+
+	'ft_calloc':
+		'prefix': 'ft_calloc'
+		'body': 'ft_calloc(${1:size_t count}, ${2:size_t size})'
+
+	'ft_strjoin':
+		'prefix': 'ft_strnew'
+		'body': 'ft_strjoin(${1:char const *s1}, ${2:char const *s2})'
+
+	'ft_strtrim':
+		'prefix': 'ft_strtrim'
+		'body': 'ft_strtrim(${1:char const *s}, ${2:char const *set})'
+
+	'ft_substr':
+		'prefix': 'ft_substr'
+		'body': 'ft_substr(${1:char const *s}, ${2:unsigned int start}, ${3:size_t len})'
+
+	'ft_split':
+		'prefix': 'ft_split'
+		'body': 'ft_split(${1:char const *s}, ${2:char c})'
+
+	'ft_itoa':
+		'prefix': 'ft_itoa'
+		'body': 'ft_itoa(${1:int n})'
+
+	'ft_strmapi':
+		'prefix': 'ft_strmapi'
+		'body': 'ft_strmapi(${1:char const *s}, ${2:char (*f)(unsigned int, char)})'
+
+	'get_next_line':
+		'prefix': 'gnl'
+		'body': 'get_next_line(${1:int fd}, ${2:char **line})'
+
+	'ft_printf':
+		'prefix': 'ft_printf'
+		'body': 'ft_printf(${1:const char *s}, ${2:...})'
+
+#MLX SNIPPETS
+	'mlx_init':
+		'prefix': 'mlx_init'
+		'body'  : 'mlx_init(${1:})${6:}'
+	'mlx_new_window':
+		'prefix': 'mlx_new_window'
+		'body'  : 'mlx_new_window(${1:void *mlx_ptr}, ${2:int size_x}, ${3:int size_y}, ${4:char *title})${6:}'
+	'mlx_clear_window':
+		'prefix': 'mlx_clear_window'
+		'body'  : 'mlx_clear_window(${1:void *mlx_ptr}, ${2:void *win_ptr})${6:}'
+	'mlx_pixel_put':
+		'prefix': 'mlx_pixel_put'
+		'body'  : 'mlx_pixel_put(${1:void *mlx_ptr}, ${2:void *win_ptr}, ${3:int x}, ${4:int y}, ${5:int color})${6:}'
+	'mlx_new_image':
+		'prefix': 'mlx_new_image'
+		'body'  : 'mlx_new_image(${1:void *mlx_ptr}, ${2:int width}, ${3:int height})${6:}'
+	'mlx_get_data_addr':
+		'prefix': 'mlx_get_data_addr'
+		'body'  : 'mlx_get_data_addr(${1:void *img_ptr}, ${2:int *bits_per_pixel}, ${3:int *size_line}, ${4:int *endian})${6:}'
+	'mlx_put_image_to_window':
+		'prefix': 'mlx_put_image_to_window'
+		'body'  : 'mlx_put_image_to_window(${1:void *mlx_ptr}, ${2:void *win_ptr}, ${3:void *img_ptr}, ${4:int x}, ${5:int y})${6:}'
+	'mlx_get_color_value':
+		'prefix': 'mlx_get_color_value'
+		'body'  : 'mlx_get_color_value(${1:void *mlx_ptr}, ${2:int color})${6:}'
+	'mlx_loop':
+		'prefix': 'mlx_loop'
+		'body'  : 'mlx_loop(${1:void *mlx_ptr})${6:}'
+	'mlx_string_put':
+		'prefix': 'mlx_string_put'
+		'body'  : 'mlx_string_put(${1:void *mlx_ptr}, ${2:void *win_ptr}, ${3:int x}, ${4:int y}, ${5:int color}, ${6:char *string})${6:}'
+	'mlx_xpm_to_image':
+		'prefix': 'mlx_xpm_to_image'
+		'body'  : 'mlx_xpm_to_image(${1:void *mlx_ptr}, ${2:char **xpm_data}, ${3:int *width}, ${4:int *height})${6:}'
+	'mlx_xpm_file_to_image':
+		'prefix': 'mlx_xpm_file_to_image'
+		'body'  : 'mlx_xpm_file_to_image(${1:void *mlx_ptr}, ${2:char *filename}, ${3:int *width}, ${4:int *height})${6:}'
+	'mlx_destroy_window':
+		'prefix': 'mlx_destroy_window'
+		'body'  : 'mlx_destroy_window(${1:void *mlx_ptr}, ${2:void *win_ptr})${6:}'
+	'mlx_destroy_image':
+		'prefix': 'mlx_destroy_image'
+		'body'  : 'mlx_destroy_image(${1:void *mlx_ptr}, ${2:void *img_ptr})${6:}'
+	'mlx_do_key_autorepeatoff':
+		'prefix': 'mlx_do_key_autorepeatoff'
+		'body'  : 'mlx_do_key_autorepeatoff(${1:void *mlx_ptr})${6:}'
+	'mlx_do_key_autorepeaton':
+		'prefix': 'mlx_do_key_autorepeaton'
+		'body'  : 'mlx_do_key_autorepeaton(${1:void *mlx_ptr})${6:}'
+	'mlx_do_sync':
+		'prefix': 'mlx_do_sync'
+		'body'  : 'mlx_do_sync(${1:void *mlx_ptr})${6:}'
+	'mlx_hook':
+		'prefix': 'mlx_hook'
+		'body'  : 'mlx_hook(${1:void *win_ptr}, ${2:int x_event}, ${3:int x_mask}, ${4:int *funct_ptr}, ${5:void *param})${6:}'
+	'mlx_mouse_hook':
+		'prefix': 'mlx_mouse_hook'
+		'body'  : 'mlx_mouse_hook(${1:void *win_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'
+	'mlx_key_hook':
+		'prefix': 'mlx_key_hook'
+		'body'  : 'mlx_key_hook(${1:void *win_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'
+	'mlx_expose_hook':
+		'prefix': 'mlx_expose_hook'
+		'body'  : 'mlx_expose_hook(${1:void *win_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'
+	'mlx_loop_hook':
+		'prefix': 'mlx_loop_hook'
+		'body'  : 'mlx_loop_hook(${1:void *mlx_ptr}, ${2:int *funct_ptr}, ${3:void *param})${6:}'

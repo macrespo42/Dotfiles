@@ -1,2 +1,2 @@
 cp -r ~/.atom ./.atom
-cp -r ~/.zshrc /.zshrc
+cp -r ~/.zshrc ./.zshrc
