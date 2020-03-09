@@ -101,3 +101,10 @@ alias docker="sudo docker"
 alias py="python3"
 alias pip="pip3"
 alias gw="clang -Wall -Wextra -Werror"
+alias rb="ruby"
+alias rs="rails server"
+alias rc="rails console"
+alias k="kubectl"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
