@@ -1,2 +1,5 @@
-cp -r .vscode ~/.vscode
-cp -r .zshrc ~/.zshrc
+curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+sudo cp -r .vscode ~/.vscode
+sudo cp -r .zshrc ~/.zshrc
