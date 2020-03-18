@@ -6,6 +6,9 @@ sudo apt-get update && sudo apt-get install spotify-client
 # add git
 sudo apt-get -y install git
 
+# add vim
+sudo apt-get -y install vim
+
 # add oh my zsh
 sudo apt-get -y install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
