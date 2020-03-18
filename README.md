@@ -1,7 +1,16 @@
 # Dotfiles
 
-Include atom config like snippets, packages, themes ...
+dotfiles linux personnal laptop
 
 ## Install
 
-just launch the installer.sh
+[vscode](https://code.visualstudio.com/Download)
+[slack](https://slack.com/intl/en-fr/downloads/linux)
+
+run `sudo sh installer.sh` will install :
+
+* git
+* vim
+* spotify
+* oh-my-zsh
+* copy .zshrc and .vscode
