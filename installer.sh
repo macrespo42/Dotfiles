@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install my software and config zsh / vscode
+# Install my softwares and config zsh / vscode
 
 install_spotify(){
     if [ ! -e "${bin_path}/spotify" ]; then
