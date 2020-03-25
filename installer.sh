@@ -1,7 +1,9 @@
 #!/bin/bash
 
+bin_path="/usr/bin"
+
 # add spotify
-if [ ! -e "/usr/bin/spotify" ]; then
+if [ ! -e "${bin_path}/spotify" ]; then
     curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
     echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
     sudo apt-get update && sudo apt-get install spotify-client
@@ -12,7 +14,7 @@ fi
 
 # add git
 
-if [ ! -e "/usr/bin/git" ]; then
+if [ ! -e "${bin_path}/git" ]; then
     sudo apt-get -y install git
     echo "git is installed now ✓"
 else
@@ -21,7 +23,7 @@ fi
 
 # add vim
 
-if [ ! -e "/usr/bin/vim" ]; then
+if [ ! -e "${bin_path}/vim" ]; then
     sudo apt-get -y install vim
     echo "vim is installed now ✓"
 else
@@ -29,7 +31,7 @@ else
 fi
 
 # add terminator
-if [ ! -e "/usr/bin/vim" ]; then
+if [ ! -e "${bin_path}/vim" ]; then
     sudo apt­-get install -y terminator
     echo "terminator is installed now ✓"
 else
