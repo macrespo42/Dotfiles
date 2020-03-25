@@ -31,12 +31,12 @@ install_vim(){
     fi
 }
 
-install_terminator(){
-    if [ ! -e "${bin_path}/vim" ]; then
-        sudo apt­-get install -y terminator
-        echo "terminator is installed now ✓"
+install_tmux(){
+    if [ ! -e "${bin_path}/tmux" ]; then
+        sudo apt-get -y install tmux
+        echo "tmux is installed now ✓"
     else
-        echo "terminator is already installed"
+        echo "tmux is already installed"
     fi
 }
 
@@ -55,10 +55,9 @@ main(){
     install_spotify
     install_git
     install_vim
-    install_terminator
+    install_tmux
     install_oh_my_zsh
     set_dotfiles
 }
 
 main
-
